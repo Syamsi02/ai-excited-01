@@ -586,7 +586,8 @@ def main():
     draw_bubble(cv)
     # Foreground sparkles for the final pop.
     for (x, y, r) in [(600, 250, 14), (760, 520, 12), (180, 420, 11),
-                      (880, 700, 13), (90, 620, 10), (480, 180, 10)]:
+                      (880, 700, 13), (90, 620, 10), (480, 180, 10),
+                      (700, 640, 9), (350, 300, 9), (940, 380, 8)]:
         cv.sparkle(x, y, r, WHITE, 235)
     outdir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(outdir, exist_ok=True)
